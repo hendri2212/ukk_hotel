@@ -8,6 +8,7 @@
         ('TV'),
         ('KULKAS'),
         ('AC'),
-        ('MEJA KERJA')
+        ('MEJA DAN KURSI KERJA'),
+        ('WATER HITER')
     ");
 ?>

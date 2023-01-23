@@ -49,7 +49,10 @@
             <label for="room" class="col-4">Tipe Kamar</label>
             <div class="col-8">
                 <select name="room_id" id="room" class="form-control">
-                    <option value=""></option>
+                    <?php $query = $conn->query("SELECT * FROM room");
+                        while($data = mysqli_fetch_object($query)){ ?>
+                            <option value="<?= $data->id ?>"><?= $data->name_room ?></option>
+                    <?php } ?>
                 </select>
             </div>
         </div>
