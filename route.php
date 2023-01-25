@@ -15,6 +15,9 @@
             case 'transaction':
                 include "./views/transaction_page.php";
                 break;
+            case 'room':
+                include "./views/room_page.php";
+                break;
             
             default:
                 http_response_code(404);
